@@ -30,6 +30,7 @@ body {
   margin-right: 15%;
 }
 
+
 .tooltip {
 position: relative;
 display: inline-block;
@@ -112,4 +113,22 @@ visibility: visible;
   text-align: center;
   font-size: 12px;
   display: block;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: monospace, cursive;
+}
+
+h2 {
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 8px;
+}
+
+h2>img {
+  width: 25px;
+  height: 25px;
+  border: 10px;
+  paddin-bottom: 10px;
 }
