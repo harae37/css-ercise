@@ -1,0 +1,115 @@
+@import url(//fonts.googleapis.com/css?family=Georgia);
+@import url(//fonts.googleapis.com/css?family=Lucida+Sans);
+@import url('https://fonts.googleapis.com/css?family=Mansalva|Ranga|Turret+Road&display=swap');
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+  text-decoration: none;
+  color: black;
+	}
+
+body {
+  font-family: 'Turret Road', cursive;
+  color: rgba(0,0,0,0.8);
+  font-weight: 400;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  font-size: 1rem;
+  padding: 50px;
+  style:"text-align:center";
+  background-color: #FFF8F3;
+  margin:15%;
+  margin-right: 15%;
+}
+
+.tooltip {
+position: relative;
+display: inline-block;
+border: none;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 140px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 0;
+position: absolute;
+z-index: 1;
+top: 100%;
+left: 50%;
+margin-left: -60px;
+font-family: helvetica;
+}
+
+.tooltip .tooltiptext::after {
+content: "";
+position: absolute;
+bottom: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+
+.container {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  transform-origin: 1 1 1 1;
+  transition: transform;
+  transition-duration: 0.3s;
+}
+
+.item {
+  margin: 20px;
+  margin-left: 0;
+  font-family: sans-serif;
+}
+
+.tooltip>img {
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  transition: opacity;
+  transition-duration: 0.3s;
+}
+
+.tooltip>img:hover {
+  opacity: 0.5;
+}
+
+.item>h3 {
+  text-transform: uppercase;
+  font-family: helvetica;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.item>span {
+  font-family: serif;
+  text-align: center;
+  font-size: 12px;
+  display: block;
+}
